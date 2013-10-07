@@ -26,19 +26,16 @@ After installing the package and restarting the editor:
 
 Sublime stores packages in the following locations:
 
-  Nix: ~/.config/sublime-text-2/packages
-
-  Mac: ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
-
-  Win: %APPDATA%\Sublime Text 2\Packages
-
+  * Nix: `~/.config/sublime-text-2/packages`
+  * Mac: `~/Library/Application\ Support/Sublime\ Text\ 2/Packages`
+  * Win: `%APPDATA%\Sublime Text 2\Packages`
 
 ### As a repository within the packages directory
 
 Open a Terminal/Console and run the following commands, replacing `PACKAGE_PATH` with the path corresponding to your OS above.
 
-  cd PACKAGE_PATH
-  git clone https://github.com/Zhomart/kframework-Sublime-Plugin.git kframework
+  `cd PACKAGE_PATH`
+  `git clone https://github.com/Zhomart/kframework-Sublime-Plugin.git kframework`
 
 ### As a repository outside of the packages directory
 
@@ -46,23 +43,23 @@ If you use Github for Mac/Windows which store repositories in a specific locatio
 
 If you don't yet have the repository, then grab it via your GUI program or via the command line:
 
-  cd WHEREVER_YOU_WANT
-  git clone https://github.com/Zhomart/kframework-Sublime-Plugin.git
+  `cd WHEREVER_YOU_WANT`
+  `git clone https://github.com/Zhomart/kframework-Sublime-Plugin.git`
 
 Once that is done, we will create the link:
 
 #### Windows:
 
-  cd PACKAGE_PATH
-  mklink /D kframework ABSOLUTE_PATH_TO_REPOSITORY
+  `cd PACKAGE_PATH`
+  `mklink /D kframework ABSOLUTE_PATH_TO_REPOSITORY`
 
 #### Nix/Mac:
 
-  cd PACKAGE_PATH
-  ln -s ABSOLUTE_PATH_TO_REPOSITORY kframework
+  `cd PACKAGE_PATH`
+  `ln -s ABSOLUTE_PATH_TO_REPOSITORY kframework`
 
 #### A note on Package Control
 
 When Package Control tries to update your packages, if you have a repository in your packages directory then it will try to pull down and merge any changes. If you don't want this to happen and would rather handle everything yourself, then you can add the following to your settings (Preferences » Package Settings » Package Control » Settings - User):
 
-  "auto_upgrade_ignore": ["kframework"]
+  `"auto_upgrade_ignore": ["kframework"]`
