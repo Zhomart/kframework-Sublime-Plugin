@@ -27,8 +27,11 @@ After installing the package and restarting the editor:
 Sublime stores packages in the following locations:
 
   Nix: ~/.config/sublime-text-2/packages
+
   Mac: ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
+
   Win: %APPDATA%\Sublime Text 2\Packages
+
 
 ### As a repository within the packages directory
 
