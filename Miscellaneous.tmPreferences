@@ -24,20 +24,20 @@
 			</array>
 		</array>
 		<key>increaseIndentPattern</key>
-		<string>\b(?i:(begin|declare|else|except|exception|finally|for|if|loop|package|procedure|task|try|type|when))\b</string>
+		<string>\b(?i:(syntax|rule|module))\b</string>
 		<key>shellVariables</key>
 		<array>
 			<dict>
 				<key>name</key>
 				<string>TM_COMMENT_START</string>
 				<key>value</key>
-				<string>// </string>
+				<string>//@ </string>
 			</dict>
 			<dict>
 				<key>name</key>
 				<string>TM_COMMENT_START_2</string>
 				<key>value</key>
-				<string>/*</string>
+				<string>/*@</string>
 			</dict>
 			<dict>
 				<key>name</key>
