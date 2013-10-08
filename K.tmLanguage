@@ -17,18 +17,40 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.k</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(//).*$\n?</string>
+			<key>name</key>
+			<string>comment.line.double-slash.k.two</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\/\*</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.pascal</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\*\/</string>
+			<key>name</key>
+			<string>comment.block.pascal.one</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>\b(?i:(=\/=Int|String|require|endmodule|syntax|imports|rule|absolute|abstract|all|and|and_then|array|as|asm|attribute|begin|bindable|case|class|const|constructor|destructor|div|do|do|else|end|except|export|exports|external|far|file|finalization|finally|for|forward|goto|if|implementation|import|in|inherited|initialization|interface|interrupt|is|label|library|mod|module|name|near|nil|not|object|of|only|operator|or|or_else|otherwise|packed|pow|private|program|property|protected|public|published|qualified|record|repeat|resident|restricted|segment|set|shl|shr|then|to|try|type|unit|until|uses|value|var|view|virtual|while|with|xor))\b</string>
 			<key>name</key>
 			<string>keyword.control.k</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Needs higher precidence than regular expressions.</string>
-			<key>match</key>
-			<string>::=|=>|\+|\*|/|-</string>
-			<key>name</key>
-			<string>keyword.operators.k</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -43,34 +65,12 @@
 			<string>constant.numeric.k</string>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.k</string>
-				</dict>
-			</dict>
+			<key>comment</key>
+			<string>Needs higher precidence than regular expressions.</string>
 			<key>match</key>
-			<string>(//@).*$\n?</string>
+			<string>::=|=>|\+|\*|/|-</string>
 			<key>name</key>
-			<string>comment.line.double-slash.k.two</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>/\*@</string>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.k</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>\*/</string>
-			<key>name</key>
-			<string>comment.block.k.one</string>
+			<string>keyword.operators.k</string>
 		</dict>
 		<dict>
 			<key>begin</key>
