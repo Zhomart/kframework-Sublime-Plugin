@@ -38,23 +38,23 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.comment.pascal</string>
+					<string>punctuation.definition.comment.k</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>\*\/</string>
 			<key>name</key>
-			<string>comment.block.pascal.one</string>
+			<string>comment.block.k.one</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:(=\/=Int|String|require|endmodule|syntax|imports|rule|absolute|abstract|all|and|and_then|array|as|asm|attribute|begin|bindable|case|class|const|constructor|destructor|div|do|do|else|end|except|export|exports|external|far|file|finalization|finally|for|forward|goto|if|implementation|import|in|inherited|initialization|interface|interrupt|is|label|library|mod|module|name|near|nil|not|object|of|only|operator|or|or_else|otherwise|packed|pow|private|program|property|protected|public|published|qualified|record|repeat|resident|restricted|segment|set|shl|shr|then|to|try|type|unit|until|uses|value|var|view|virtual|while|with|xor))\b</string>
+			<string>\b(?i:(module|configuration|require|endmodule|syntax|imports|rule|when|notBool))\b</string>
 			<key>name</key>
 			<string>keyword.control.k</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Int|String)\b</string>
+			<string>\b(Int|String|Bool)\b</string>
 			<key>name</key>
 			<string>storage.type.c</string>
 		</dict>
@@ -104,41 +104,6 @@
 					<string>\\.</string>
 					<key>name</key>
 					<string>constant.character.escape.k</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>applyEndPatternLast</key>
-			<integer>1</integer>
-			<key>begin</key>
-			<string>'</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.k</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>'</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.k</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>string.quoted.single.k</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>''</string>
-					<key>name</key>
-					<string>constant.character.escape.apostrophe.k</string>
 				</dict>
 			</array>
 		</dict>
